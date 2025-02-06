@@ -23,7 +23,6 @@ export default function Layout(props) {
         title={props.title}
         description={props.description}
         canonical={props.url}
-        google-site-verification="yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M"
         openGraph={{
           url: props.url,
           title: props.title,
@@ -48,7 +47,7 @@ export default function Layout(props) {
       <div
         className={cx(
           props?.fontStyle,
-          "antialiased text-gray-800 dark:bg-black dark:text-gray-400"
+          "text-gray-800 antialiased dark:bg-black dark:text-gray-400"
         )}>
         {props.alternate ? (
           <NavbarAlt {...props} />

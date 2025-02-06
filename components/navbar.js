@@ -26,7 +26,22 @@ export default function Navbar(props) {
     }
   ];
 
-  const mobilemenu = [...leftmenu];
+  const rightmenu = [
+    {
+      label: "Posts",
+      href: "/posts"
+    },
+    {
+      label: "Portfolio",
+      href: "/portfolio"
+    },
+    {
+      label: "Gallery",
+      href: "/gallery"
+    }
+  ];
+
+  const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
     <Container>
@@ -35,7 +50,7 @@ export default function Navbar(props) {
           {({ open }) => (
             <>
               <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
-                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
+                <div className="flex-col items-center justify-start order-1 hidden w-full md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -48,7 +63,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-xl"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -57,28 +72,46 @@ export default function Navbar(props) {
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
-                    <Image
-                      src="/img/logo-light.svg"
-                      alt="Logo"
-                      priority={true}
-                      sizes="(max-width: 640px) 100vw, 200px"
-                    />
+                <div className="flex items-center justify-between w-full md:w-auto">
+                  <Link href="/" className="w-[130px] dark:hidden">
+                    {props.logo ? (
+                      <Image
+                        src="/img/logo-light.svg"
+                        alt="Logo"
+                        priority={true}
+                        width={260}
+                        height={130}
+                        sizes="(max-width: 640px)"
+                      />
+                    ) : (
+                      <span className="block text-center">
+                        DiGi Moda
+                      </span>
+                    )}
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
-                    <Image
-                      src="/img/logo-dark.svg"
-                      alt="Logo"
-                      priority={true}
-                      sizes="(max-width: 640px) 100vw, 200px"
-                    />
+                  <Link
+                    href="/"
+                    className="hidden w-[130px] dark:block">
+                    {props.logoalt ? (
+                      <Image
+                        src="/img/logo-dark.svg"
+                        alt="Logo"
+                        priority={true}
+                        width={260}
+                        height={130}
+                        sizes="(max-width: 640px)"
+                      />
+                    ) : (
+                      <span className="block text-center">
+                        DiGi Moda
+                      </span>
+                    )}
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
-                    className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 md:hidden ">
+                    className="px-2 py-1 ml-auto text-gray-500 rounded-md focus:text-blue-700 focus:outline-none dark:text-gray-300 md:hidden ">
                     <svg
-                      className="h-6 w-6 fill-current"
+                      className="w-6 h-6 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24">
                       {open && (
@@ -97,9 +130,36 @@ export default function Navbar(props) {
                     </svg>
                   </Disclosure.Button>
                 </div>
+                <div className="flex-col items-center justify-start order-2 hidden w-full md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
+                  {rightmenu.map((item, index) => (
+                    <Fragment key={`${item.label}${index}`}>
+                      {item.children && item.children.length > 0 ? (
+                        <DropdownMenu
+                          menu={item}
+                          key={`${item.label}${index}`}
+                          items={item.children}
+                        />
+                      ) : (
+                        <Link
+                          href={item.href}
+                          key={`${item.label}${index}`}
+                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-xl"
+                          target={item.external ? "_blank" : ""}
+                          rel={item.external ? "noopener" : ""}>
+                          <span> {item.label}</span>
+                          {item.badge && (
+                            <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
+                              {item.badge}
+                            </span>
+                          )}
+                        </Link>
+                      )}
+                    </Fragment>
+                  ))}
+                </div>
               </div>
               <Disclosure.Panel>
-                <div className="order-2 -ml-4 mt-4 flex w-full flex-col items-center justify-start md:hidden">
+                <div className="flex flex-col items-center justify-start order-2 w-full mt-4 -ml-4 md:hidden">
                   {mobilemenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -113,7 +173,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="w-full px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="w-full px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -143,7 +203,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
               "flex items-center gap-x-1 rounded-md px-5 py-2 text-sm font-medium  outline-none transition-all focus:outline-none focus-visible:text-indigo-500 focus-visible:ring-1 dark:focus-visible:bg-gray-800",
               open
                 ? "text-blue-500 hover:text-blue-500"
-                : " text-gray-600 dark:text-gray-400 ",
+                : " text-gray-800 dark:text-gray-200 ",
               mobile ? "w-full px-4 py-2 " : "inline-block px-4 py-2"
             )}>
             <span>{menu.label}</span>
@@ -187,3 +247,4 @@ const DropdownMenu = ({ menu, items, mobile }) => {
     </Menu>
   );
 };
+                        

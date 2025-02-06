@@ -27,9 +27,9 @@ if (!projectId) {
 /**
  * Checks if it's safe to create a client instance, as `@sanity/client` will throw an error if `projectId` is false
  */
-const client = projectId ?
-  createClient({ projectId, dataset, apiVersion, useCdn }) :
-  null;
+const client = projectId
+  ? createClient({ projectId, dataset, apiVersion, useCdn })
+  : null;
 
 export const fetcher = async ([query, params]) => {
   return client ? client.fetch(query, params) : [];
@@ -97,14 +97,14 @@ export async function getAllAuthors() {
   return [];
 }
 
-export async function getAuthorBySlug() {
+export async function getAuthorBySlug(slug) {
   if (client) {
     return (await client.fetch(authorquery, { slug })) || {};
   }
   return {};
 }
 
-// Category
+// Category .getAllCategories getPostsByCategory
 
 export async function getAllCategories() {
   if (client) {

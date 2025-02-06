@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://digimoda.kimhabork.site/api/hello</loc><lastmod>2024-06-14T02:34:49.438Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://digimoda.kimhabork.site/about</loc><lastmod>2024-06-14T02:34:49.439Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://digimoda.kimhabork.site/contact</loc><lastmod>2024-06-14T02:34:49.439Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://digimoda.kimhabork.site</loc><lastmod>2024-06-14T02:34:49.439Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/api/hello</loc><lastmod>2024-12-12T19:30:19.569Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/privacy</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/categories</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/gallery</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/portfolio</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/terms</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/contact</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/about</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/author/kimhab-ork</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site</loc><lastmod>2024-12-12T19:30:19.573Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/author/digi-moda</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/fall-2024-s-top-fashion-trends-showcase-designers-vision</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/key-takeaways-from-paris-fashion-week-men-s</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/taylor-swift-brings-out-carrie-bradshaw-s-second-favorite-handbag-for-date-night</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/kylie-jenner-unveils-her-new-collaboration-with-atlein</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/blake-lively-and-ryan-reynolds-are-the-pure-embodiment-of-fall</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/lvmh-sells-off-white-brand-to-bluestar-alliance</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/beyonce-s-former-assistant-wore-9-archival-looks-for-her-nantucket-wedding</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/paris-fashion-week-s-spring-summer-2025-runways-were-filled-with-these-6-trends</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/rick-owens-s-best-look-in-street-style</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/ariana-grande-glows-as-the-new-face-of-swarovski</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/wall-street-bets-on-usd8-5-billion-fashion-deal-s-fate-in-trial</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/kim-jones-to-exit-fendi</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://digimoda.site/post/selena-gomez-finds-the-key-to-a-perfect-red-carpet-lbd-or-vogue</loc><lastmod>2024-12-12T19:30:19.574Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

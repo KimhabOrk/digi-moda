@@ -1,18 +1,18 @@
 import Container from "@/components/container";
 import "@/styles/common.css";
-import { Libre_Franklin } from 'next/font/google';
-import { Cormorant_Garamond } from 'next/font/google';
+import { Libre_Franklin } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 
 const libre_franklin = Libre_Franklin({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-libre_franklin',
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-libre_franklin"
 });
 
 const cormorant_garamond = Cormorant_Garamond({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-cormorant_garamond',
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-cormorant_garamond",
   weight: "400"
 });
 
@@ -21,7 +21,7 @@ export default function Privacy() {
     <Container>
       <div className="mx-auto w-full max-w-4xl px-4 py-12 md:px-6 md:py-16">
         <header className="mb-8 md:mb-12">
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
             Privacy Policy
           </h1>
         </header>
@@ -40,8 +40,12 @@ export default function Privacy() {
           </p>
         </section>
         <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl text-black dark:text-white md:text-3xl font-bold mb-4">Interpretation and Definitions</h2>
-          <h2 className="text-2xl text-black dark:text-white md:text-xl font-bold mb-4">Interpretation</h2>
+          <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-3xl">
+            Interpretation and Definitions
+          </h2>
+          <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-xl">
+            Interpretation
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             The words of which the initial letter is capitalized have
             meanings defined under the following conditions. The
@@ -49,7 +53,9 @@ export default function Privacy() {
             regardless of whether they appear in singular or in
             plural.
           </p>
-          <h2 className="text-2xl text-black dark:text-white md:text-xl font-bold mb-4">Definitions</h2>
+          <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-xl">
+            Definitions
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             For the purposes of this Privacy Policy:
           </p>
@@ -138,10 +144,10 @@ export default function Privacy() {
               <p className="mb-4 text-black dark:text-white">
                 Website refers to DiGi Moda, accessible from{" "}
                 <a
-                  href="https://digimoda.kimhabork.site"
+                  href="https://digimoda.site"
                   rel="external nofollow noopener"
                   target="_blank">
-                  https://digimoda.kimhabork.site
+                  https://digimoda.site
                 </a>
               </p>
             </li>
@@ -156,9 +162,15 @@ export default function Privacy() {
           </ul>
         </section>
         <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Collecting and Using Your Personal Data</h2>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Types of Data Collected</h2>
-          <h4>Personal Data</h4>
+          <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-3xl">
+            Collecting and Using Your Personal Data
+          </h2>
+          <h2 className="mb-4 text-2xl font-bold text-black dark:text-white md:text-xl">
+            Types of Data Collected
+          </h2>
+          <h4 className="text-black dark:text-white">
+            Personal Data
+          </h4>
           <p className="mb-4 text-black dark:text-white">
             While using Our Service, We may ask You to provide Us with
             certain personally identifiable information that can be
@@ -185,8 +197,8 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
-          <h4>Usage Data</h4>
+        <section className="mb-8 text-black dark:text-white md:mb-12">
+          <h4 className="text-black dark:text-white">Usage Data</h4>
           <p className="mb-4 text-black dark:text-white">
             Usage Data is collected automatically when using the
             Service.
@@ -227,7 +239,7 @@ export default function Privacy() {
             <li>LinkedIn</li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="mb-8 text-black dark:text-white md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             If You decide to register through or otherwise grant us
             access to a Third-Party Social Media Service, We may
@@ -254,7 +266,7 @@ export default function Privacy() {
             analyze Our Service. The technologies We use may include:
           </p>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="mb-8 text-black dark:text-white md:mb-12">
           <ul>
             <li>
               Cookies or Browser Cookies. A cookie is a small file
@@ -277,7 +289,7 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="mb-8 text-black dark:text-white md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             Cookies can be &quot;Persistent&quot; or
             &quot;Session&quot; Cookies. Persistent Cookies remain on
@@ -347,13 +359,15 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="mb-8 text-black dark:text-white md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             For more information about the cookies we use and your
             choices regarding cookies, please visit our Cookies Policy
             or the Cookies section of our Privacy Policy.
           </p>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Use of Your Personal Data</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-xl">
+            Use of Your Personal Data
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             The Company may use Personal Data for the following
             purposes:
@@ -433,7 +447,7 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="mb-8 text-black dark:text-white md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             We may share Your personal information in the following
             situations:
@@ -482,8 +496,10 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Retention of Your Personal Data</h2>
+        <section className="mb-8 text-black dark:text-white md:mb-12">
+          <h2 className="mb-4 text-2xl font-bold md:text-xl">
+            Retention of Your Personal Data
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             The Company will retain Your Personal Data only for as
             long as is necessary for the purposes set out in this
@@ -501,7 +517,9 @@ export default function Privacy() {
             Our Service, or We are legally obligated to retain this
             data for longer time periods.
           </p>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Transfer of Your Personal Data</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-xl">
+            Transfer of Your Personal Data
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             Your information, including Personal Data, is processed at
             the Company&quot;s operating offices and in any other
@@ -527,8 +545,10 @@ export default function Privacy() {
             information.
           </p>
         </section>
-        <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Delete Your Personal Data</h2>
+        <section className="mb-8 text-black dark:text-white md:mb-12">
+          <h2 className="mb-4 text-2xl font-bold md:text-xl">
+            Delete Your Personal Data
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             You have the right to delete or request that We assist in
             deleting the Personal Data that We have collected about
@@ -551,7 +571,9 @@ export default function Privacy() {
             information when we have a legal obligation or lawful
             basis to do so.
           </p>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Disclosure of Your Personal Data</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-xl">
+            Disclosure of Your Personal Data
+          </h2>
           <h4>Business Transactions</h4>
           <p className="mb-4 text-black dark:text-white">
             If the Company is involved in a merger, acquisition or
@@ -588,7 +610,9 @@ export default function Privacy() {
             </li>
             <li>Protect against legal liability</li>
           </ul>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Security of Your Personal Data</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-xl">
+            Security of Your Personal Data
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             The security of Your Personal Data is important to Us, but
             remember that no method of transmission over the Internet,
@@ -598,8 +622,10 @@ export default function Privacy() {
             security.
           </p>
         </section>
-        <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Children&quot;s Privacy</h2>
+        <section className="mb-8 text-black dark:text-white md:mb-12">
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+            Children&quot;s Privacy
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             Our Service does not address anyone under the age of 13.
             We do not knowingly collect personally identifiable
@@ -617,7 +643,9 @@ export default function Privacy() {
             consent from a parent, We may require Your parent&quot;s
             consent before We collect and use that information.
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Links to Other Websites</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+            Links to Other Websites
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             Our Service may contain links to other websites that are
             not operated by Us. If You click on a third party link,
@@ -630,7 +658,9 @@ export default function Privacy() {
             the content, privacy policies or practices of any third
             party sites or services.
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Changes to this Privacy Policy</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+            Changes to this Privacy Policy
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             We may update Our Privacy Policy from time to time. We
             will notify You of any changes by posting the new Privacy
@@ -649,7 +679,9 @@ export default function Privacy() {
           </p>
         </section>
         <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Us</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+            Contact Us
+          </h2>
           <p className="mb-4 text-black dark:text-white">
             If you have any questions about this Privacy Policy, You
             can contact us:

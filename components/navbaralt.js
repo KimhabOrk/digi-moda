@@ -34,12 +34,20 @@ export default function NavbarAlt(props) {
           path: "/category/beauty"
         },
         {
+          title: "Celebrity",
+          path: "/category/celebrity"
+        },
+        {
           title: "Culture",
           path: "/category/culture"
         },
         {
           title: "Technology",
           path: "/category/technology"
+        },
+        {
+          title: "Business",
+          path: "/category/business"
         }
       ]
     },
@@ -62,7 +70,7 @@ export default function NavbarAlt(props) {
     {
       label: "Terms and Conditions",
       href: "/terms"
-    },
+    }
   ];
 
   return (

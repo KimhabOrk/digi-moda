@@ -10,18 +10,24 @@ export default function DiGiModa() {
           <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
             Author
           </h1>
-          <div className="grid grid-cols-1 gap-4 px-0 py-4 content-center">
-            <div className="hero-content flex flex-col justity-center">
-              <figure className="flex justify-center items-center rounded-full pb-6">
-                <Image src="/img/digimoda.jpg" className="max-w-sm rounded-full bg-center bg-cover" />
+          <div className="grid grid-cols-1 content-center gap-4 px-0 py-4">
+            <div className="hero-content justity-center flex flex-col">
+              <figure className="flex items-center justify-center rounded-full pb-6">
+                <Image
+                  src="/img/digimoda.jpg"
+                  className="max-w-sm rounded-full bg-cover bg-center"
+                  alt="DiGi Moda"
+                />
               </figure>
               <div className="flex-col py-2">
-                <h1 className="text-xl text-center font-bold text-gray-700 md:text-2xl dark:text-white lg:text-4xl lg:leading-snug">
+                <h1 className="text-center text-xl font-bold text-gray-700 dark:text-white md:text-2xl lg:text-4xl lg:leading-snug">
                   DIGI MODA
                 </h1>
-                <div className="px-2 mt-4 mx-6 text-lg md:text-xl text-gray-700 text-center dark:text-white lg:text-2xl lg:leading-snug justify-center text-pretty">
+                <div className="mx-6 mt-4 justify-center text-pretty px-2 text-center text-lg text-gray-700 dark:text-white md:text-xl lg:text-2xl lg:leading-snug">
                   <p className="w-auto">
-                    Stay updated on all things Fashion, Culture, Beauty, and Technology with insights from DiGi Moda.
+                    Stay updated on all things Fashion, Culture,
+                    Beauty, and Technology with insights from DiGi
+                    Moda.
                   </p>
                 </div>
               </div>
